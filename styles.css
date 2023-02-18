@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inconsolata&family=Merriweather:ital,wght@1,300;1,400&family=Sacramento&display=swap');
+/*body*/
+body{
+    font:15px/1.5 #DFEAA6;
+    font-family: 'Merriweather', serif;
+    padding:0;
+    margin: 0;
+}
+/*header*/
+header{
+    background-color: #29425C;
+    color:#E45F2B;
+    padding-top: 30px;
+    min-height:70px;
+    border-bottom: #edce7a 3px solid;
+}
+
+/*navbar*/
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+header ul{
+    margin:0;
+    padding:0;
+}
+header li{
+    padding: 0 20px;
+    float:left;
+    display: inline;
+}
+header a{
+    text-decoration-color: darksalmon;
+    text-transform: uppercase;
+    font-size: 16px;
+    color:#F9C975;
+}
+
+header #brand{
+    float:left;
+}
+header h1{
+    margin-top: 0;
+}
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+header .current a{
+   color:#B66A8F;
+   
+}
+header a:hover{
+    color:#CB8C97;
+    font-weight: bold;
+}
+/*showcase*/
+#showcase{
+  min-height: 400px;
+  background:url("https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png") no-repeat 0px -250px;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+#showcase h1{
+    margin-top: 130px;
+    font-size: 55px;
+    margin-bottom:10px ;
+}
+#showcase p{
+    font-size: 15px;
+}
+/*email*/
+#email{
+  padding: 15px;
+ color:#FFEBD8;
+ background-color:lightcoral ;
+}
+#email h1{
+    float:left;
+}
+#email form{
+    float:right;
+    margin-top:15px;
+}
+#email input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+.button1{
+    height:38px;
+    background-color: #CB8C97;
+    border-radius: 10px;
+    padding:0 20px;
+    border:none;
+    color:darkslateblue;
+    box-shadow: 15px 4px 3px  rgba(0,0,0,0.25);
+}
+/*Boxes*/
+#boxes{
+    margin-top:20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#boxes .box img{
+    width:100px;
+    height: 90px;
+}
+#boxes .box:first-child img{
+    width:130px;
+    height:120px;
+    margin-top:2px;
+}
+#boxes .box:first-child h1{
+    margin-top:2px;
+}
+.box:nth-child(2) img{
+    margin-top: 5px;
+    width:130px;
+    height:120px;
+}
+/*footer*/
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:#FFEBD8;
+    background-color:#E45F2B ;
+    text-align: center;
+}
+@media(max-width:768px){
+    header #brand,
+    header nav,
+    header nav li,
+    #email h1,
+    #email form,
+    #boxes .box{
+        float:none;
+        text-align: center;
+        width: 100%;
+    
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    header nav li{
+        padding: 0 10px;
+    }
+    #showcase .container h1{
+        margin-top: 90px;
+        font-size: 28px;
+        text-align: center;
+    }
+    #showcase {
+        background-position: 0 0px;
+    }
+    #email button{
+        display: block;
+        width:100%;
+    }
+    #email form input[type="email"]{
+        width:100%;
+        margin-bottom: 5px;
+    }
+}
